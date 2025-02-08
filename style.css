@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 }
 header {
+    align-items: center;
     background-color: #1b1b32;
     display: flex;
+    height: 100px;
+    justify-content: space-between;
 }
 
 h1 {
@@ -22,11 +28,17 @@ h2 {
     width: max(10rem, 18vw);
     background-color:#0a0a23;
     padding: 0.4rem;
+    max-height: 100%;
 }
 
 .navigation-container > ul {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    margin-block: 0;
+    padding-inline-start: 0;
 }
 
 .sr-only {
@@ -68,4 +80,12 @@ nav > ul > li:hover {
     cursor: pointer;
     background-color: #dfdfe2;
     color: #1b1b32;
+}
+
+.student-form-container {
+    padding: 10px;
+}
+
+.student-form-container h1 {
+    text-align: center;
 }
